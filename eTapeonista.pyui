@@ -1,61 +1,61 @@
 [
   {
     "selected" : false,
-    "frame" : "{{0, 0}, {480, 320}}",
+    "frame" : "{{0, 0}, {320, 480}}",
     "class" : "View",
     "nodes" : [
       {
         "selected" : false,
-        "frame" : "{{6, 6}, {228, 52}}",
+        "frame" : "{{4, 6}, {310, 52}}",
         "class" : "Button",
         "nodes" : [
 
         ],
         "attributes" : {
           "border_width" : 1,
-          "flex" : "WLR",
-          "action" : "begin_recording",
+          "flex" : "W",
+          "action" : "copyToClipboard",
           "frame" : "{{200, 144}, {80, 32}}",
-          "title" : "Begin Recording",
+          "title" : "Copy to Clipboard",
           "uuid" : "92F874AA-FC44-4388-B2E7-377FE80D486A",
           "border_color" : "RGBA(0.300000,0.300000,1.000000,1.000000)",
           "class" : "Button",
           "corner_radius" : 3,
-          "name" : "beginRecording",
+          "name" : "copyToClipboard",
           "font_size" : 15
         }
       },
       {
         "selected" : true,
-        "frame" : "{{242, 6}, {232, 52}}",
+        "frame" : "{{6, 422}, {308, 52}}",
         "class" : "Button",
         "nodes" : [
 
         ],
         "attributes" : {
-          "action" : "stop_recording",
+          "action" : "clearMeasurements",
           "border_width" : 1,
-          "flex" : "WLR",
+          "flex" : "",
           "frame" : "{{200, 144}, {80, 32}}",
-          "title" : "Stop Recording",
+          "title" : "Clear Measurements",
           "uuid" : "92F874AA-FC44-4388-B2E7-377FE80D486A",
           "class" : "Button",
           "corner_radius" : 3,
           "border_color" : "RGBA(1.000000,0.366667,0.366667,1.000000)",
-          "name" : "stopRecording",
+          "name" : "clearMeasurements",
           "font_size" : 15
         }
       },
       {
         "selected" : false,
-        "frame" : "{{6, 114}, {468, 200}}",
+        "frame" : "{{6, 106}, {308, 308}}",
         "class" : "TextView",
         "nodes" : [
 
         ],
         "attributes" : {
           "uuid" : "276CDC3F-3A0F-44F4-BFDE-50BBCAE0CA51",
-          "flex" : "WH",
+          "flex" : "W",
           "corner_radius" : 0,
           "frame" : "{{140, 60}, {200, 200}}",
           "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
@@ -68,6 +68,43 @@
           "class" : "TextView",
           "name" : "measurements",
           "font_size" : 17
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{6, 66}, {32, 32}}",
+        "class" : "ImageView",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "border_width" : 0,
+          "alpha" : 1,
+          "frame" : "{{190, 110}, {100, 100}}",
+          "class" : "ImageView",
+          "uuid" : "1146BBA8-ADB4-4748-B8F7-8F558F7E9A4A",
+          "corner_radius" : 0,
+          "background_color" : "RGBA(1.000000,0.468750,0.468750,1.000000)",
+          "name" : "bluetoothIcon",
+          "image_name" : "iob:bluetooth_256"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{46, 66}, {150, 32}}",
+        "class" : "Label",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "font_size" : 18,
+          "frame" : "{{165, 144}, {150, 32}}",
+          "uuid" : "7922AE76-84D0-42A1-BDF0-602B8552E430",
+          "class" : "Label",
+          "alignment" : "left",
+          "text" : "Not Connected",
+          "name" : "connectionLabel",
+          "font_name" : "<System>"
         }
       }
     ],
