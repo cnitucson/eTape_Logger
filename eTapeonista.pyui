@@ -1,0 +1,82 @@
+[
+  {
+    "selected" : false,
+    "frame" : "{{0, 0}, {480, 320}}",
+    "class" : "View",
+    "nodes" : [
+      {
+        "selected" : false,
+        "frame" : "{{6, 6}, {228, 52}}",
+        "class" : "Button",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "border_width" : 1,
+          "flex" : "WLR",
+          "action" : "begin_recording",
+          "frame" : "{{200, 144}, {80, 32}}",
+          "title" : "Begin Recording",
+          "uuid" : "92F874AA-FC44-4388-B2E7-377FE80D486A",
+          "border_color" : "RGBA(0.300000,0.300000,1.000000,1.000000)",
+          "class" : "Button",
+          "corner_radius" : 3,
+          "name" : "beginRecording",
+          "font_size" : 15
+        }
+      },
+      {
+        "selected" : true,
+        "frame" : "{{242, 6}, {232, 52}}",
+        "class" : "Button",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "action" : "stop_recording",
+          "border_width" : 1,
+          "flex" : "WLR",
+          "frame" : "{{200, 144}, {80, 32}}",
+          "title" : "Stop Recording",
+          "uuid" : "92F874AA-FC44-4388-B2E7-377FE80D486A",
+          "class" : "Button",
+          "corner_radius" : 3,
+          "border_color" : "RGBA(1.000000,0.366667,0.366667,1.000000)",
+          "name" : "stopRecording",
+          "font_size" : 15
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{6, 114}, {468, 200}}",
+        "class" : "TextView",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "uuid" : "276CDC3F-3A0F-44F4-BFDE-50BBCAE0CA51",
+          "flex" : "WH",
+          "corner_radius" : 0,
+          "frame" : "{{140, 60}, {200, 200}}",
+          "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "editable" : true,
+          "border_width" : 1,
+          "alignment" : "left",
+          "autocorrection_type" : "default",
+          "font_name" : "<System>",
+          "spellchecking_type" : "default",
+          "class" : "TextView",
+          "name" : "measurements",
+          "font_size" : 17
+        }
+      }
+    ],
+    "attributes" : {
+      "enabled" : true,
+      "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+      "tint_color" : "RGBA(0.000000,0.478000,1.000000,1.000000)",
+      "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+      "flex" : ""
+    }
+  }
+]
