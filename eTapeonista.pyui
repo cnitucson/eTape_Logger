@@ -6,56 +6,58 @@
     "nodes" : [
       {
         "selected" : false,
-        "frame" : "{{4, 6}, {310, 52}}",
+        "frame" : "{{6, 6}, {148, 52}}",
         "class" : "Button",
         "nodes" : [
 
         ],
         "attributes" : {
-          "border_width" : 1,
-          "flex" : "W",
-          "action" : "copyToClipboard",
-          "frame" : "{{200, 144}, {80, 32}}",
-          "title" : "Copy to Clipboard",
           "uuid" : "92F874AA-FC44-4388-B2E7-377FE80D486A",
+          "flex" : "WRB",
+          "corner_radius" : 5,
+          "frame" : "{{200, 144}, {80, 32}}",
           "border_color" : "RGBA(0.300000,0.300000,1.000000,1.000000)",
+          "border_width" : 1,
+          "title" : "Copy to Clipboard",
+          "action" : "copyToClipboard",
+          "font_bold" : true,
           "class" : "Button",
-          "corner_radius" : 3,
           "name" : "copyToClipboard",
           "font_size" : 15
         }
       },
       {
-        "selected" : true,
-        "frame" : "{{6, 422}, {308, 52}}",
+        "selected" : false,
+        "frame" : "{{162, 6}, {152, 52}}",
         "class" : "Button",
         "nodes" : [
 
         ],
         "attributes" : {
-          "action" : "clearMeasurements",
-          "border_width" : 1,
-          "flex" : "",
-          "frame" : "{{200, 144}, {80, 32}}",
-          "title" : "Clear Measurements",
           "uuid" : "92F874AA-FC44-4388-B2E7-377FE80D486A",
-          "class" : "Button",
-          "corner_radius" : 3,
+          "flex" : "WLB",
+          "corner_radius" : 4,
+          "frame" : "{{200, 144}, {80, 32}}",
           "border_color" : "RGBA(1.000000,0.366667,0.366667,1.000000)",
+          "border_width" : 1,
+          "title" : "Clear Measurements",
+          "action" : "clearMeasurements",
+          "font_bold" : true,
+          "class" : "Button",
           "name" : "clearMeasurements",
           "font_size" : 15
         }
       },
       {
-        "selected" : false,
-        "frame" : "{{6, 106}, {308, 308}}",
+        "selected" : true,
+        "frame" : "{{6, 143}, {308, 331}}",
         "class" : "TextView",
         "nodes" : [
 
         ],
         "attributes" : {
           "uuid" : "276CDC3F-3A0F-44F4-BFDE-50BBCAE0CA51",
-          "flex" : "W",
+          "flex" : "WH",
           "corner_radius" : 0,
           "frame" : "{{140, 60}, {200, 200}}",
           "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
@@ -83,7 +85,7 @@
           "frame" : "{{190, 110}, {100, 100}}",
           "class" : "ImageView",
           "uuid" : "1146BBA8-ADB4-4748-B8F7-8F558F7E9A4A",
-          "corner_radius" : 0,
+          "corner_radius" : 5,
           "background_color" : "RGBA(1.000000,0.468750,0.468750,1.000000)",
           "name" : "bluetoothIcon",
           "image_name" : "iob:bluetooth_256"
@@ -97,14 +99,32 @@
 
         ],
         "attributes" : {
-          "font_size" : 18,
+          "name" : "connectionLabel",
           "frame" : "{{165, 144}, {150, 32}}",
           "uuid" : "7922AE76-84D0-42A1-BDF0-602B8552E430",
           "class" : "Label",
           "alignment" : "left",
           "text" : "Not Connected",
-          "name" : "connectionLabel",
+          "font_size" : 18,
           "font_name" : "<System>"
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{6, 106}, {308, 29}}",
+        "class" : "SegmentedControl",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "flex" : "LR",
+          "border_width" : 0,
+          "segments" : "Centimeters|Feet",
+          "frame" : "{{100, 226}, {120, 29}}",
+          "class" : "SegmentedControl",
+          "uuid" : "7DE2293A-8FE3-41DE-888F-20EB6B475217",
+          "corner_radius" : 0,
+          "name" : "measurementUnits"
         }
       }
     ],
