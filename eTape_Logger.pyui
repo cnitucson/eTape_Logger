@@ -119,7 +119,7 @@
         "attributes" : {
           "flex" : "LR",
           "border_width" : 0,
-          "segments" : "Centimeters|Feet",
+          "segments" : "Meters|Feet",
           "frame" : "{{100, 226}, {120, 29}}",
           "class" : "SegmentedControl",
           "uuid" : "7DE2293A-8FE3-41DE-888F-20EB6B475217",
