@@ -6,7 +6,7 @@ import clipboard
 import sound
 import json
 
-settings = 'eTapeonista_settings.json'
+settings = 'eTape_logger_settings.json'
 
 measurements = list()
 measurementUnits = list()
@@ -34,8 +34,8 @@ def unitChanger(sender):
 	if v['measurementUnits'].selected_index == 0:
 		#centimeters
 		for value in measurements:
-			convertedValue = round(value/64*2.54,1)
-			unit = 'cm'
+			convertedValue = round(value/64*0.0254,1)
+			unit = 'm'
 			print(convertedValue)
 			formattedList.append(str(convertedValue)+' '+unit)
 	else:
@@ -99,8 +99,8 @@ class eTapeManager (object):
 		if v['measurementUnits'].selected_index == 0:
 			#centimeters
 			for value in measurements:
-				convertedValue = round(value/64*2.54,1)
-				unit = 'cm'
+				convertedValue = round(value/64*0.0254,1)
+				unit = 'm'
 				formattedList.append(str(convertedValue)+' '+unit)
 		else:
 			#feet
