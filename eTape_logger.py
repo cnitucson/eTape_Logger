@@ -13,7 +13,7 @@ measurementUnits = list()
 
 def copyToClipboard(sender):
 	if v['measurementUnits'].selected_index == 0:
-		printList = ','.join(str(round(x/64*.0254,2)) for x in measurements)
+		printList = ','.join(str(round(x/64*2.54,1)) for x in measurements)
 	else:
 		printList = ','.join(str(round(x/64/12,2)) for x in measurements)
 	clipboard.set(printList)
@@ -34,7 +34,7 @@ def unitChanger(sender):
 	if v['measurementUnits'].selected_index == 0:
 		#centimeters
 		for value in measurements:
-			convertedValue = round(value/64*0.0254,2)
+			convertedValue = round(value/64*0.0254,1)
 			unit = 'm'
 			print(convertedValue)
 			formattedList.append(str(convertedValue)+' '+unit)
@@ -53,13 +53,11 @@ unitChangerAction.action = unitChanger
 class eTapeManager (object):
 	def __init__(self):
 		self.peripheral = None
-		self.uuidForDisplay = None
 
 	def did_discover_peripheral(self, p):
 		if p.name and 'eTape' in p.name and not self.peripheral:
 			self.peripheral = p
 			print('Connecting to eTape...')
-			self.uuidForDisplay = self.peripheral.uuid[-6:]
 			cb.connect_peripheral(p)
 	
 	def did_connect_peripheral(self, p):
@@ -87,11 +85,11 @@ class eTapeManager (object):
 			if c.uuid == '23455102-8322-1805-A3DA-78E4000C659C':
 				self.peripheral.set_notify_value(c, True)
 				v['bluetoothIcon'].background_color = '#2C82C9'
-				v['connectionLabel'].text = 'Connected to '+self.uuidForDisplay
+				v['connectionLabel'].text = 'Connected'
 				
 	def did_update_value(self, c, error):
 		v['bluetoothIcon'].background_color = '#2C82C9'
-		v['connectionLabel'].text = 'Connected to '+self.uuidForDisplay
+		v['connectionLabel'].text = 'Connected'
 		#values are recoreded in 1/64 inch
 		value = struct.unpack('<H',c.value)[0]
 		if value >= 65000:
@@ -101,7 +99,7 @@ class eTapeManager (object):
 		if v['measurementUnits'].selected_index == 0:
 			#centimeters
 			for value in measurements:
-				convertedValue = round(value/64*0.0254,2)
+				convertedValue = round(value/64*0.0254,1)
 				unit = 'm'
 				formattedList.append(str(convertedValue)+' '+unit)
 		else:

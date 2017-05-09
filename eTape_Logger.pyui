@@ -13,7 +13,7 @@
         ],
         "attributes" : {
           "uuid" : "92F874AA-FC44-4388-B2E7-377FE80D486A",
-          "flex" : "WRB",
+          "font_size" : 15,
           "corner_radius" : 5,
           "frame" : "{{200, 144}, {80, 32}}",
           "border_color" : "RGBA(0.300000,0.300000,1.000000,1.000000)",
@@ -23,7 +23,7 @@
           "font_bold" : true,
           "class" : "Button",
           "name" : "copyToClipboard",
-          "font_size" : 15
+          "flex" : "WRB"
         }
       },
       {
@@ -35,7 +35,7 @@
         ],
         "attributes" : {
           "uuid" : "92F874AA-FC44-4388-B2E7-377FE80D486A",
-          "flex" : "WLB",
+          "font_size" : 15,
           "corner_radius" : 4,
           "frame" : "{{200, 144}, {80, 32}}",
           "border_color" : "RGBA(1.000000,0.366667,0.366667,1.000000)",
@@ -45,11 +45,11 @@
           "font_bold" : true,
           "class" : "Button",
           "name" : "clearMeasurements",
-          "font_size" : 15
+          "flex" : "WLB"
         }
       },
       {
-        "selected" : true,
+        "selected" : false,
         "frame" : "{{6, 143}, {308, 331}}",
         "class" : "TextView",
         "nodes" : [
@@ -57,7 +57,7 @@
         ],
         "attributes" : {
           "uuid" : "276CDC3F-3A0F-44F4-BFDE-50BBCAE0CA51",
-          "flex" : "WH",
+          "font_size" : 17,
           "corner_radius" : 0,
           "frame" : "{{140, 60}, {200, 200}}",
           "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
@@ -69,7 +69,7 @@
           "spellchecking_type" : "default",
           "class" : "TextView",
           "name" : "measurements",
-          "font_size" : 17
+          "flex" : "WH"
         }
       },
       {
@@ -92,21 +92,21 @@
         }
       },
       {
-        "selected" : false,
-        "frame" : "{{46, 66}, {150, 32}}",
+        "selected" : true,
+        "frame" : "{{46, 66}, {268, 32}}",
         "class" : "Label",
         "nodes" : [
 
         ],
         "attributes" : {
-          "name" : "connectionLabel",
+          "font_name" : "<System>",
           "frame" : "{{165, 144}, {150, 32}}",
           "uuid" : "7922AE76-84D0-42A1-BDF0-602B8552E430",
           "class" : "Label",
           "alignment" : "left",
           "text" : "Not Connected",
           "font_size" : 18,
-          "font_name" : "<System>"
+          "name" : "connectionLabel"
         }
       },
       {
